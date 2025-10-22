@@ -24,7 +24,7 @@
                     {#each pokemon.stats as stat}
                         <div class="stat-item">
                             <span class="stat-name">{stat.stat.name}</span>
-                            <span class="stat-value">{stat.stat.value}</span>
+                            <span class="stat-value">{stat.base_stat}</span>
                             <progress value={stat.base_stat} max="150"></progress>
                         </div>
                     {/each}
